@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandsite </title>
+    <link rel="stylesheet" href="./styles/bio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <script src="./scripts/index-page.js"></script>
+    <header>
+        <nav class="nav">
+            <a href="../index.html">
+                <img class="nav__logo" src="./assets/logos/Logo-bandsite.svg" alt="bandsite logo">
+            </a>
+
+            <ul class="nav__list">
+                <li class="nav__list-item active">
+                    <a class="nav__link" href="../index.html">Biography</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link " href="./pages/shows.html">Shows</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-image__container">
+            <article class="hero-image">
+                <h1 class="hero-image__text hero-image__overlay">
+                    The Bees Knees
+                </h1>
+            </article>
+        </section>
+
+        <section class="about">
+            <h2 class="about__heading">
+                About the Musicians
+            </h2>
+            <img class="about__image" src="./assets/images/band.jpg" alt="band live performance">
+            <blockquote class="about__quote">
+                "We push each other to be the best. It's not uncommon for one of us to say '
+                this needs to be
+                better, back to the drawing board'"
+            </blockquote>
+            <p class="about__quote about__sub-heading-author">
+                - Bryan Teddy, lead vocalist of The Bees Knees
+            </p>
+            <h2 class="about__sub-heading">
+                The Bees Knees
+            </h2>
+            <article class="about__paragraph">
+
+                <p>
+                    The Bees Knees is a pop rock band originating from San Francisco, California. The band
+                    consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green,
+                    bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial
+                    success as an unsigned act, drawing attention from manager Cam Adams. Having worked with
+                    other popular acts (The Elephant In The Room, One Trick Pony, The Cat's Meow), Adams was
+                    confident the band could succeed even further, pushing them to sign with Magenta Records.
+                </p>
+                <p>
+                    From there, the band has soared, gaining international recognition and ranking in the top 10
+                    on the Poster Charts. New fans immediately fell in love with the band's original and organic
+                    attitude, solidifying their place as one of the hottest and fastest up and coming acts of
+                    this century. Fans affectionately refer to themselves as “The Hive” and are drawn to their
+                    candid and authentic performances on stage. Looking forward to touring in the future, The
+                    Bees Knees are currently recording their second studio album, looking to be released in late
+                    2021.
+                </p>
+            </article>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__heading">
+                Photo Gallery
+            </h2>
+            <figure class="gallery__container">
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-1.jpg" alt="dancing crowd">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-2.jpg" alt="dancing girl">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-3.jpg" alt="crowd waving hands">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-4.jpg"
+                        alt="back view of dancing girl">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-5.jpg" alt="shower of show-steamers">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-6.jpg" alt="singer performing">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-7.jpg"
+                        alt="confetti shower and crowd">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-8.jpg" alt="closeup of DJ console">
+                </article>
+                <article class="gallery__container-image">
+                    <img class="gallery__image" src="./assets/images/Photo-gallery-9.jpg"
+                        alt="confetti shower on waving crowd">
+                </article>
+            </figure>
+        </section>
+        <section class="comments">
+            <h2 class="comments__heading">
+                Join the Conversation
+            </h2>
+            <section class="comments__section-setcenter">
+                <section class="comments__section-setwidth">
+                    <section class="comments__form-container">
+                        <img class="comments__photo">
+                        <form class="comments__form">
+                            <article class="comments__input-area">
+                                <label for="name" class="comments__label">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name"
+                                    class="comments__input-name comments__input-placeholder">
+                            </article>
+                            <article class="comments__input-area">
+                                <label for="comment" class="comments__label">Comments</label>
+                                <textarea id="comment" class="comments__input-comment comments__input-placeholder"
+                                    placeholder="Add a new comment"></textarea>
+                            </article>
+                            <article class="comments__button-container">
+                                <button type="submit" class="comments__button">Comment</button>
+                            </article>
+                            <article class="comments__default"></article>
+                        </form>
+                    </section>
+                    <section class="comments__new-comments">
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__flex">
+            <section class="footer__flex-section">
+                <h2 class="footer__heading">
+                    Get In Touch
+                </h2>
+                <figure class="footer__icon">
+                    <img class="footer__social-icon" src="./assets/icons/SVG/Icon-instagram.svg" alt="instagram">
+                    <img class="footer__social-icon-fb" src="./assets/icons/SVG/Icon-facebook.svg" alt="facebook">
+                    <img class="footer__social-icon" src="./assets/icons/SVG/Icon-twitter.svg" alt="twitter">
+                </figure>
+            </section>
+            <figure class="footer__logo-hide">
+                <img class="footer__logo-tab" src="./assets/logos/Logo-bandsite.svg" alt="bandsite logo">
+            </figure>
+        </section>
+        <section class="footer__flex-details">
+            <article>
+                <ul class="footer__list">
+                    <li class="footer__list-item-agent">
+                        <p class="footer__list-item-text">
+                            Cam Adams
+                        </p>
+                        <p class="footer__list-item-text">
+                            The Bees Knees Management
+                        </p>
+                    </li>
+
+                    <li class="footer__list-item-details">
+                        <p class="footer__list-item-text">
+                            503 Broadway Penthouse,
+                        </p>
+                        <p class="footer__list-item-text">
+                            New York, NY 10012, USA
+                        </p>
+                    </li>
+                    <li class="footer__list-item-mail">
+                        info@thebeesknees.com
+                    </li>
+                </ul>
+
+            </article>
+            <article>
+                <ul class="footer__list">
+                    <li class="footer__list-item-agent">
+                        <p class="footer__list-item-text">
+                            Pearl Gregg
+                        </p>
+                        <p class="footer__list-item-text">
+                            Limitless Artist Group
+                        </p>
+                    </li>
+                    <li class="footer__list-item-details">
+                        <p class="footer__list-item-text">
+                            Booking Agent for
+                        </p>
+                        <p class="footer__list-item-text">
+                            US / South America / Japan
+                        </p>
+                    </li>
+                    <li class="footer__list-item-mail">
+                        pearl.gregg@limitlessag.com
+                    </li>
+                </ul>
+
+            </article>
+            <article>
+                <ul class="footer__list">
+                    <li class="footer__list-item-agent">
+                        <p class="footer__list-item-text">
+                            Carson Whyte
+                        </p>
+                        <p class="footer__list-item-text">
+                            ARCH Entertainment
+                        </p>
+                    </li>
+                    <li class="footer__list-item-details">
+                        <p class="footer__list-item-text">
+                            Booking Agent for
+                        </p>
+                        <p class="footer__list-item-text">
+                            UK / EU / AU
+                        </p>
+                    </li>
+                    <li class="footer__list-item-mail">
+                        cwhyte@archentertainment.com
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <figure class="footer__logo-zone">
+            <img class="footer__logo" src="./assets/logos/Logo-bandsite.svg" alt="bandsite logo">
+        </figure>
+
+        <p class="footer__copyright">
+            Copyright The Bees Knees © 2021 All Rights Reserved
+        </p>
+
+    </footer>
+    <script src="./scripts/index-page.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

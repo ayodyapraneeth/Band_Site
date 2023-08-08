@@ -1,0 +1,61 @@
+@use "./typography" as *;
+@use "./breakpoints" as *;
+@use "./variables" as *;
+
+.gallery {
+  padding: 2rem 1.2rem;
+  background-color: $secondary-alabaster;
+
+  @include media-tablet {
+    padding: 0 3rem;
+  }
+
+  @include media-desktop {
+    padding: 0 5rem;
+  }
+
+  &__heading {
+    @include fontBold;
+    font-size: 2.5rem;
+    color: $primary-black;
+    margin: 0;
+
+    @include media-tablet {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    @include media-desktop {
+      font-size: 2rem;
+      padding: 2rem 0;
+    }
+  }
+
+  &__container {
+    margin: 1rem 0;
+
+    @include media-tablet {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1.3rem;
+
+    @include media-tablet {
+      height: auto;
+      margin: 0;
+    }
+  }
+
+  @include media-tablet {
+    &__container-image {
+      flex-basis: calc(33.33% - 20px);
+      margin: 0.5rem;
+    }
+  }
+}

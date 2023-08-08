@@ -1,0 +1,57 @@
+@use "./typography" as *;
+@use "../partials/breakpoints" as *;
+@use "./variables" as *;
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 22rem;
+  background-image: url(../../assets/images/hero-bio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-tablet {
+    height: 32rem;
+  }
+
+  @include media-desktop {
+    height: 46rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 351px;
+    padding: 0 1rem;
+    background-color: rgba(32, 32, 32, 0.5);
+    display: flex;
+    align-items: center;
+
+    @include media-tablet {
+      padding: 0 2.5rem;
+      height: 513px;
+    }
+
+    @include media-desktop {
+      padding: 0 5rem;
+      height: 736px;
+    }
+  }
+
+  &__text {
+    @include fontBold;
+    color: $primary-white;
+    margin: 0;
+    font-size: 2.6rem;
+
+    @include media-tablet {
+      font-size: 3.5rem;
+    }
+
+    @include media-desktop {
+      font-size: 3.5rem;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@use "./typography" as *;
+@use "./breakpoints" as *;
+@use "./variables" as *;
+
+.show-hero {
+  position: relative;
+  width: 100%;
+  height: 29.5rem;
+  background-image: url(../../assets/images/hero-shows.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: solid 1px $secondary-mercury;
+
+  @include media-tablet {
+    height: 38.875rem;
+  }
+
+  @include media-desktop {
+    height: 51.875rem;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 472px;
+    padding: 0 1rem;
+    background-color: rgba(32, 32, 32, 0.5);
+
+    @include media-tablet {
+      height: 622px;
+    }
+
+    @include media-desktop {
+      height: 830px;
+    }
+  }
+
+  &__content {
+    @include media-desktop {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      margin-top: 12rem;
+    }
+  }
+
+  &__sub-heading {
+    @include fontRegular;
+    color: $primary-white;
+    margin: auto;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    padding-top: 3rem;
+
+    @include media-tablet {
+      @include fontBold;
+      padding-top: 6rem;
+      margin-left: 2rem;
+      margin-bottom: -4rem;
+    }
+
+    @include media-desktop {
+      @include fontDemi;
+      font-size: 1.8rem;
+      padding-top: 11rem;
+      margin-bottom: -4rem;
+    }
+  }
+
+  &__heading {
+    @include fontBold;
+    color: $primary-white;
+    font-size: 2.2rem;
+    white-space: pre-line;
+    margin-top: 0;
+    line-height: 3rem;
+    margin-bottom: 1.2rem;
+
+    @include media-tablet {
+      font-size: 4rem;
+      line-height: 5rem;
+      margin-left: 2rem;
+    }
+
+    @include media-desktop {
+      font-size: 4.5rem;
+      line-height: 5rem;
+    }
+  }
+
+  &__soundtrack {
+    width: 100%;
+    height: 35%;
+    border-radius: 0.3rem;
+
+    @include media-tablet {
+      width: 60%;
+      height: 11rem;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+
+    @include media-desktop {
+      width: 45%;
+      height: 11rem;
+    }
+  }
+}

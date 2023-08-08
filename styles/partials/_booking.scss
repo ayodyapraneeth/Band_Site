@@ -1,0 +1,147 @@
+@use "./typography" as *;
+@use "./breakpoints" as *;
+@use "./variables" as *;
+
+.shows {
+  background-color: $primary-white;
+
+  @include media-desktop {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+  }
+
+  &__heading {
+    @include fontDemi;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+    color: $secondary-black;
+
+    @include media-tablet {
+      padding: 2rem;
+      font-size: 4rem;
+    }
+
+    @include media-desktop {
+      font-size: 3rem;
+      color: $primary-black;
+    }
+  }
+
+  &__input {
+    @include fontDemi;
+    line-height: 2rem;
+    color: $primary-silver;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &__table {
+    padding: 0 1rem;
+
+    @include media-tablet {
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: $secondary-alabaster;
+      }
+
+      &.selected {
+        background-color: $secondary-mercury;
+      }
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__table-head {
+    @include fontDemi;
+    font-size: 1rem;
+    margin-top: 0;
+    color: $primary-silver;
+    text-transform: uppercase;
+  }
+
+  &__details {
+    @include fontRegular;
+    color: $secondary-black;
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  &__date-data {
+    font-size: 1.2rem;
+    @include fontDemi;
+  }
+
+  &__table-row {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem 1rem 1rem 0rem;
+  }
+
+  &__button {
+    @include fontDemi;
+    background-color: $primary-black;
+    color: $primary-white;
+    border-radius: 0.4rem;
+    height: 9vh;
+    margin-bottom: 5%;
+    width: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include media-tablet {
+      width: 34%;
+      height: 7vh;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    @include media-desktop {
+      height: 7vh;
+    }
+
+    &:hover {
+      background-color: $secondary-black;
+      cursor: pointer;
+    }
+  }
+
+  &__table-container {
+    @include media-tablet {
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+    }
+
+    @include media-desktop {
+      justify-content: space-around;
+    }
+  }
+
+  &__booking {
+    border-bottom: 1px solid $secondary-mercury;
+
+    @include media-desktop {
+      width: 100%;
+    }
+  }
+
+  &__table-width {
+    @include media-desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      width: 70%;
+    }
+  }
+}
